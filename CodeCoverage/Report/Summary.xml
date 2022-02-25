@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="Summary">
+  <Summary>
+    <Generatedon>2022-02-25 - PM 4:37:41</Generatedon>
+    <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
+    <Assemblies>1</Assemblies>
+    <Classes>1</Classes>
+    <Files>1</Files>
+    <Coveredlines>20</Coveredlines>
+    <Uncoveredlines>0</Uncoveredlines>
+    <Coverablelines>20</Coverablelines>
+    <Totallines>46</Totallines>
+    <Linecoverage>100</Linecoverage>
+    <Coveredbranches>0</Coveredbranches>
+    <Totalbranches>0</Totalbranches>
+    <Coveredmethods>4</Coveredmethods>
+    <Totalmethods>4</Totalmethods>
+    <Methodcoverage>100</Methodcoverage>
+  </Summary>
+  <Coverage>
+    <Assembly name="Tests" classes="1" coverage="100" coveredlines="20" coverablelines="20" totallines="46" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100">
+      <Class name="LabelSetterContextTest" coverage="100" coveredlines="20" coverablelines="20" totallines="46" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
+    </Assembly>
+  </Coverage>
+</CoverageReport>

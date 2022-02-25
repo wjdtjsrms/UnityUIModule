@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2022-02-25_16-37-40" tag="">
+  <assembly name="Tests">
+    <class name="LabelSetterContextTest" coveredlines="20" coverablelines="20" totallines="46" coveredbranches="0" totalbranches="0" />
+  </assembly>
+</coverage>
