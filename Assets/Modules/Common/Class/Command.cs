@@ -5,17 +5,15 @@ namespace Anipen
     public class Command : ICommand
     {
         #region Members
-        public CommandType excutableType;
-
-        protected Action onFinishCommand;
+        protected Action _onFinishCommand;
         #endregion
 
-        #region Members
+        #region Property
+        public CommandType _ExcutableType { get; protected set; }
+        #endregion
 
-        public Command(Action finishCallback = null)
-        {
-            onFinishCommand = finishCallback;
-        }
+        #region Dispose
+        ~Command() => Dispose();
         #endregion
 
         #region Implementation : ICommand
@@ -26,11 +24,14 @@ namespace Anipen
 
         public virtual void Finish()
         {
-            onFinishCommand?.Invoke();
+            _onFinishCommand?.Invoke();
             Dispose();
         }
 
-        public virtual void Dispose() { onFinishCommand = null; }
+        public virtual void Dispose()
+        {
+            _onFinishCommand = null;
+        }
         #endregion
     }
 }

@@ -4,7 +4,7 @@ namespace Anipen
     using System.Collections.Generic;
     using UnityEngine;
 
-    public enum CommandType { Network, UI }
+    public enum CommandType { None, Network, UI }
 
     public class CommandController : Singleton<CommandController>
     {
@@ -35,7 +35,7 @@ namespace Anipen
         {
             foreach (var excutor in excutors)
             {
-                if(command.excutableType == excutor.availableType)
+                if(command._ExcutableType == excutor.availableType)
                     excutor.Excute(command);
             }
         }

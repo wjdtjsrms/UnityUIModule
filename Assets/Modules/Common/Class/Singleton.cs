@@ -5,7 +5,7 @@ namespace Anipen
     public class SingletonGameObject<T> : MonoBehaviour where T : MonoBehaviour
     {
         #region Static
-        protected static T instance;
+        private static T instance;
         public static T Instance
         {
             get
@@ -24,7 +24,7 @@ namespace Anipen
     public class Singleton<T> where T : class, new()
     {
         #region Static
-        protected static T instance;
+        private static T instance;
         public static T Instance
         {
             get
